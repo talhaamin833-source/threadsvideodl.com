@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Threads Video Downloader — Open Guide (2026)</title>
+<meta name="description" content="An open, community-style guide to downloading public Threads videos: how links work, which formats you get, and the tools that do it cleanly.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0B57D0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Threads Video Downloader — Open Guide (2026)">
+<meta property="og:description" content="An open, community-style guide to downloading public Threads videos: how links work, which formats you get, and the tools that do it cleanly.">
+<meta property="og:site_name" content="ThreadsVideoDL Guides">
+<meta property="og:image" content="https://threadsvideodl.com/apple-touch-icon.png">
+<meta name="twitter:card" content="summary">
+
+
+<style>
+:root{--a:#0B57D0;--ink:#1f1f1f;--mut:#5f6368;--line:#e3e8ef;--soft:#f4f7fc}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:2}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700}
+.brand img{border-radius:8px}.brand em{font-style:normal;color:var(--a);font-weight:600}
+.cta{background:var(--a);color:#fff;text-decoration:none;padding:9px 16px;border-radius:999px;font-weight:600;font-size:15px;white-space:nowrap}
+.cta:hover{background:#0842a0}
+main{padding:36px 20px 24px}
+.kicker{margin:0;color:var(--a);font-weight:600;font-size:14px;letter-spacing:.02em;text-transform:uppercase}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.2;margin:.3em 0 .2em;letter-spacing:-.01em}
+.meta{color:var(--mut);font-size:14px;margin:0 0 24px}
+h2{font-size:24px;line-height:1.3;margin:40px 0 10px;padding-bottom:6px;border-bottom:3px solid var(--soft)}
+h3{font-size:19px;margin:24px 0 6px}
+a{color:var(--a);text-underline-offset:3px}
+code{background:var(--soft);padding:1px 6px;border-radius:6px;font-size:.9em;word-break:break-all}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--soft);color:#0842a0}
+ol,ul{padding-left:22px}li{margin:6px 0}
+dt{font-weight:700;margin-top:10px}dd{margin:2px 0 0 0;color:#3c4043}
+.toc{background:var(--soft);border-radius:12px;padding:12px 16px;font-size:15px}
+.legal{margin:40px 0 8px;padding:16px 18px;border-left:4px solid var(--a);background:var(--soft);border-radius:0 12px 12px 0;font-size:15px}
+.foot{border-top:1px solid var(--line);color:var(--mut);font-size:14px;padding:18px 0 28px}
+.foot p{margin:4px 0}
+@media (max-width:520px){body{font-size:16px}.cta{padding:8px 12px;font-size:14px}.brand span{font-size:15px}}
+@media (min-width:640px){table{display:table}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Threads Video Downloader: an open guide", "description": "An open, community-style guide to downloading public Threads videos: how links work, which formats you get, and the tools that do it cleanly.",  "inLanguage": "en", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "about": {"@type": "WebApplication", "name": "ThreadsVideoDL", "url": "https://threadsvideodl.com/", "applicationCategory": "MultimediaApplication", "operatingSystem": "Any"}, "author": {"@type": "Organization", "name": "ThreadsVideoDL", "url": "https://threadsvideodl.com/"}, "publisher": {"@type": "Organization", "name": "ThreadsVideoDL", "url": "https://threadsvideodl.com/"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+ <a class="brand" href="./"><img src="favicon.svg" width="32" height="32" alt=""> <span>ThreadsVideoDL <em>Guides</em></span></a>
+ <a class="cta" href="https://threadsvideodl.com/">Open the downloader</a>
+</div></header>
+<main class="wrap">
+<p class="kicker">Open guide · maintained on GitHub</p>
+<h1>Threads Video Downloader: an open guide</h1>
+<p class="meta">Updated November 12, 2026 · 3 min read</p>
+<p>Threads, the text-and-media app from Instagram's makers, lets people post short videos alongside their updates. The app has no "save video" button for other people's posts, which is why so many people search for a <strong>Threads video downloader</strong>. This open guide explains, in plain language, how saving a public Threads video works, what you actually receive, and how to pick a tool that respects both you and the creator.</p>
+
+<h2>How a Threads video link is built</h2>
+<p>Every public Threads post has a permanent address. When you tap <em>Share → Copy link</em>, you get something like <code>https://www.threads.com/@username/post/ABC123xyz</code>. The part after <code>/post/</code> is the post's short code. A downloader reads that code, asks Threads for the public media attached to the post, and returns the original video file. Nothing is recorded from your screen, so the result is the same file Threads streams to everyone.</p>
+<p>Two things follow from this. First, only <strong>public</strong> posts can be saved; a private account's media is never returned. Second, you get the creator's original upload, not a re-encoded copy, so quality is as good as Threads allows.</p>
+
+<h2>The three-step workflow</h2>
+<ol>
+ <li><strong>Copy the post link</strong> from the Threads app or website.</li>
+ <li><strong>Paste it</strong> into a web downloader such as <a href="https://threadsvideodl.com/">ThreadsVideoDL</a>.</li>
+ <li><strong>Choose the file</strong> (video, photo or audio) and save it to your device.</li>
+</ol>
+<p>If you want screenshots for each step, the <a href="https://threadsvideodl.com/how-to-download-threads-videos/">step-by-step Threads download guide</a> walks through the same flow on phone and desktop.</p>
+
+<h2>What you get back</h2>
+<table>
+ <thead><tr><th>Post content</th><th>File you receive</th><th>Notes</th></tr></thead>
+ <tbody>
+  <tr><td>Single video</td><td>MP4 (H.264)</td><td>Original resolution, usually 720p or 1080p</td></tr>
+  <tr><td>Carousel with videos</td><td>One MP4 per clip</td><td>Each item can be saved separately</td></tr>
+  <tr><td>Photo or carousel image</td><td>JPG</td><td>Full-size image, not a thumbnail</td></tr>
+  <tr><td>Video audio only</td><td>MP3</td><td>Useful for podcasts and voice clips</td></tr>
+ </tbody>
+</table>
+
+<h2>Watermarks and why they don't appear</h2>
+<p>Unlike some short-video apps, Threads does not burn a logo into the video when it is served. A downloader that fetches the original file therefore gives you a clean copy. Tools that <em>add</em> their own branding are doing so by choice. If a clean file matters for your workflow, look for a <a href="https://threadsvideodl.com/threads-video-downloader-without-watermark/">Threads video downloader without watermark</a> and check a sample before relying on it.</p>
+
+<h2>Choosing a tool: an open checklist</h2>
+<ul>
+ <li><strong>No login required.</strong> A downloader never needs your Threads or Instagram password. Treat any tool that asks for one as unsafe.</li>
+ <li><strong>No forced app install.</strong> A browser-based tool works on iPhone, Android and PC without extra permissions.</li>
+ <li><strong>Original quality.</strong> Compare the file size and resolution with what you see in the app.</li>
+ <li><strong>Clear policies.</strong> A real privacy policy, a DMCA contact and an explanation of what is (and isn't) stored.</li>
+ <li><strong>Few, honest ads.</strong> Fake "Download" buttons are a red flag.</li>
+</ul>
+<p>If you save clips often from a desktop browser, a lightweight <a href="https://threadsvideodl.com/threads-video-downloader-extension/">Threads downloader browser extension or bookmarklet</a> removes the copy-paste step entirely.</p>
+
+<h2>Common questions</h2>
+<h3>Does the creator get notified?</h3>
+<p>No. Saving a public file doesn't interact with the post, so there is no like, view or notification attached to it.</p>
+<h3>Can I save videos from private accounts?</h3>
+<p>No, and a trustworthy tool won't try. Private media is only available to approved followers inside the app.</p>
+<h3>Why does a link sometimes fail?</h3>
+<p>The post may have been deleted, the account may have gone private, or the link may be a profile link rather than a post link. Copy the link again from the post's share menu and retry.</p>
+
+<h2>Contributing</h2>
+<p>Spotted something out of date? Threads changes its sharing menu and link format from time to time, so corrections are genuinely useful. Open an issue describing what changed, or send a pull request that edits <code>index.html</code> directly. Please keep the tone neutral and practical, avoid promoting specific paid tools, and don't add instructions for accessing private accounts or bypassing a creator's settings.</p>
+
+<h2>About this guide</h2>
+<p>This repository is a small, plain-HTML guide meant to be read, forked and improved. Suggestions are welcome through issues. The online tool referenced throughout is available at <a href="https://threadsvideodl.com/">threadsvideodl.com</a>.</p>
+<aside class="legal"><strong>Use responsibly.</strong> Only download public content that you own or have permission to use. Videos, photos and audio belong to their creators; respect copyright and Threads' terms, and credit creators when you share. This guide is independent and is not affiliated with, endorsed by or sponsored by Meta, Instagram or Threads.</aside>
+</main>
+<footer class="foot"><div class="wrap">
+ <p>Independent guide hosted on GitHub Pages. Threads is a trademark of Meta Platforms, Inc.; mentioned for identification only.</p>
+ <p><a href="https://threadsvideodl.com/">ThreadsVideoDL</a> · <a href="https://threadsvideodl.com/privacy-policy/">Privacy</a> · <a href="https://threadsvideodl.com/contact/">Contact</a></p>
+</div></footer>
+</body>
+</html>
